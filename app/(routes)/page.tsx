@@ -1,5 +1,5 @@
-import getBillboard from "@/actions/get-billboard";
 import Container from "../components/ui/container";
+import getBillboard from "@/actions/get-billboard";
 import Billboard from "../components/billboard";
 import getProducts from "@/actions/get-products";
 import ProductList from "../components/product-list";
@@ -7,19 +7,19 @@ import ProductList from "../components/product-list";
 export const revalidate = 0;
 
 const HomePage = async () => {
-  const billboard = await getBillboard("5330676a-e22d-4cff-af55-360579149a23");
+  const billboard = await getBillboard("46611b40-a2df-4285-ab6b-0f77a90b6947");
   const products = await getProducts({ isFeatured: true });
 
   return (
     <Container>
       {/* Billboard */}
-      <div className="space-y-8 bp-8">
+      <div className="space-y-10 pb-10">
         <Billboard data={billboard} />
-      </div>
 
-      {/* Products */}
-      <div>
-        <ProductList title="Featured Products" items={products} />
+        {/* Products */}
+        <div className="flex flex-col gap-y-8 px-4 sm:px-6 lg:px-8">
+          <ProductList title="Featured Products" items={products} />
+        </div>
       </div>
     </Container>
   );

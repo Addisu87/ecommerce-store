@@ -8,11 +8,16 @@ const Billboard: React.FC<BillboardProps> = ({ data }) => {
   return (
     <div className="p-4 sm-p-6 lg:p-8 rounded-xl overflow-hidden">
       <div
-        className="rounded-xl relative aspect-square md:aspect-[2/4/1] overflow-hidden bg-cover"
+        className="rounded-xl relative aspect-square md:aspect-[2.4/1] overflow-hidden bg-cover"
         style={{ backgroundImage: `url(${data?.imageUrl})` }}
       >
         <div className="h-full w-full flex flex-col justify-center items-center text-center gap-y-8">
-          <div className="font-bold text-3xl sm:text-5xl lg:text-6xl sm:max-w-xl max-w-xs">
+          <div
+            className="font-bold text-3xl sm:text-5xl lg:text-6xl sm:max-w-xl max-w-xs
+          bg-gradient-to-r from-green-500 from-10% via-yellow-500 via-30% to-red-500 to-90%
+
+          inline-block text-transparent bg-clip-text"
+          >
             {data?.label}
           </div>
         </div>

@@ -6,6 +6,7 @@ import { ShoppingBag } from "lucide-react";
 import Button from "./ui/button";
 
 const NavbarActions = () => {
+  // To remove hydration error
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
