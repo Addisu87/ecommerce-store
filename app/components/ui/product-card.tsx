@@ -5,8 +5,8 @@ import { Expand, ShoppingCart } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 import { Product } from "@/types";
-import IconButton from "./icon-button";
-import Currency from "./currency";
+import IconButton from "@/app/components/ui/icon-button";
+import Currency from "@/app/components/ui/currency";
 
 interface ProductCardProps {
   data: Product;

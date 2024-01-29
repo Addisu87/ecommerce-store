@@ -1,7 +1,7 @@
 import { Urbanist } from "next/font/google";
 
-import Footer from "./components/footer";
-import Navbar from "./components/navbar";
+import Footer from "@/app/components/footer";
+import Navbar from "@/app/components/navbar";
 
 import "./globals.css";
 

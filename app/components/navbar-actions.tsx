@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { ShoppingBag } from "lucide-react";
 
-import Button from "./ui/button";
+import Button from "@/app/components/ui/button";
 
 const NavbarActions = () => {
   // To remove hydration error
