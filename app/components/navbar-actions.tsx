@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { ShoppingBag } from "lucide-react";
 
-import Button from "./button";
+import Button from "./ui/button";
 
 const NavbarActions = () => {
   const [isMounted, setIsMounted] = useState(false);
