@@ -5,20 +5,20 @@ import { MouseEventHandler } from "react";
 import { Expand, ShoppingCart } from "lucide-react";
 import { useRouter } from "next/navigation";
 
-import { Product } from "@/types";
-import IconButton from "@/app/components/ui/icon-button";
 import Currency from "@/app/components/ui/currency";
+import IconButton from "@/app/components/ui/icon-button";
 import usePreviewModal from "@/app/hooks/use-preview-modal";
 import useCart from "@/app/hooks/use-cart";
+import { Product } from "@/types";
 
-interface ProductCardProps {
+interface ProductCard {
   data: Product;
 }
 
-const ProductCard: React.FC<ProductCardProps> = ({ data }) => {
-  const router = useRouter();
+const ProductCard: React.FC<ProductCard> = ({ data }) => {
   const previewModal = usePreviewModal();
   const cart = useCart();
+  const router = useRouter();
 
   const handleClick = () => {
     router.push(`/product/${data?.id}`);
@@ -29,6 +29,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ data }) => {
 
     previewModal.onOpen(data);
   };
+
   const onAddToCart: MouseEventHandler<HTMLButtonElement> = (event) => {
     event.stopPropagation();
 
@@ -40,12 +41,12 @@ const ProductCard: React.FC<ProductCardProps> = ({ data }) => {
       onClick={handleClick}
       className="bg-white group cursor-pointer rounded-xl border p-3 space-y-4"
     >
-      {/* Images and Actions */}
+      {/* Image & actions */}
       <div className="aspect-square rounded-xl bg-gray-100 relative">
         <Image
-          src={data?.images?.[0]?.url}
+          src={data.images?.[0]?.url}
+          alt=""
           fill
-          alt="Image"
           className="aspect-square object-cover rounded-md"
         />
         <div className="opacity-0 group-hover:opacity-100 transition absolute w-full px-6 bottom-5">
@@ -66,9 +67,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ data }) => {
         <p className="font-semibold text-lg">{data.name}</p>
         <p className="text-sm text-gray-500">{data.category?.name}</p>
       </div>
-
-      {/* Price */}
-      <div>
+      {/* Price & Reiew */}
+      <div className="flex items-center justify-between">
         <Currency value={data?.price} />
       </div>
     </div>
