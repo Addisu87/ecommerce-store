@@ -1,11 +1,12 @@
-import getCategory from "@/actions/get-category";
-import getColors from "@/actions/get-colors";
-import getProducts from "@/actions/get-products";
-import getSizes from "@/actions/get-sizes";
 import Billboard from "@/app/components/billboard";
 import Container from "@/app/components/ui/container";
 import NoResults from "@/app/components/ui/no-results";
 import ProductCard from "@/app/components/ui/product-card";
+
+import getCategory from "@/actions/get-category";
+import getColors from "@/actions/get-colors";
+import getProducts from "@/actions/get-products";
+import getSizes from "@/actions/get-sizes";
 
 import Filter from "./components/filter";
 import MobileFilters from "./components/mobile-filters";

@@ -1,7 +1,7 @@
 "use client";
 
-import { useRouter, useSearchParams } from "next/navigation";
 import qs from "query-string";
+import { useRouter, useSearchParams } from "next/navigation";
 
 import { Color, Size } from "@/types";
 import Button from "@/app/components/ui/button";
@@ -12,6 +12,7 @@ interface FilterProps {
   name: string;
   valueKey: string;
 }
+
 const Filter: React.FC<FilterProps> = ({ data, name, valueKey }) => {
   const searchParams = useSearchParams();
   const router = useRouter();
