@@ -11,6 +11,7 @@ import useCart from "@/app/hooks/use-cart";
 interface CartItemProps {
   data: Product;
 }
+
 const CartItem: React.FC<CartItemProps> = ({ data }) => {
   const cart = useCart();
 
