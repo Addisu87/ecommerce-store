@@ -1,6 +1,6 @@
 "use client";
 
-import { useParams, useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import qs from "query-string";
 
 import { Color, Size } from "@/types";
@@ -13,8 +13,7 @@ interface FilterProps {
   valueKey: string;
 }
 const Filter: React.FC<FilterProps> = ({ data, name, valueKey }) => {
-  // const searchParams = useParams();
-  const searchParams = new URLSearchParams(window.location.search);
+  const searchParams = useSearchParams();
   const router = useRouter();
 
   const selectedValue = searchParams.get(valueKey);
