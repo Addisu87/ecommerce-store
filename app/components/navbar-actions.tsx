@@ -2,10 +2,10 @@
 
 import { useEffect, useState } from "react";
 import { ShoppingBag } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 import Button from "@/app/components/ui/button";
 import useCart from "@/app/hooks/use-cart";
-import { useRouter } from "next/navigation";
 
 const NavbarActions = () => {
   // To remove hydration error
