@@ -11,7 +11,7 @@ interface CurrencyProps {
   value?: string | number;
 }
 
-const Currency: React.FC<CurrencyProps> = ({ value }) => {
+const Currency: React.FC<CurrencyProps> = ({ value = 0 }) => {
   // To remove hydration
   const [isMounted, setIsMounted] = useState(false);
 
