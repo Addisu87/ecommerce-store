@@ -11,6 +11,9 @@ interface ProductPageProps {
   };
 }
 
+// To protect from cache
+export const revalidate = 0;
+
 const ProductPage: React.FC<ProductPageProps> = async ({ params }) => {
   // Individual product
   const product = await getProduct(params.productId);
@@ -18,6 +21,10 @@ const ProductPage: React.FC<ProductPageProps> = async ({ params }) => {
   const suggestedProducts = await getProducts({
     categoryId: product?.category?.id,
   });
+
+  if (!product) {
+    return null;
+  }
 
   return (
     <div className="bg-white">

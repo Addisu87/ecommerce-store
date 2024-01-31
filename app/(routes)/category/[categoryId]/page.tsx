@@ -1,4 +1,4 @@
-import Billboard from "@/app/components/billboard";
+import Billboard from "@/app/components/ui/billboard";
 import Container from "@/app/components/ui/container";
 import NoResults from "@/app/components/ui/no-results";
 import ProductCard from "@/app/components/ui/product-card";
