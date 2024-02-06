@@ -72,7 +72,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2">
+          <div className="grid grid-cols-2 gap-2 md:gap-8 md:grid-cols-4 lg:col-span-2">
             <div className="text-center sm:text-left">
               <p className="text-lg font-medium text-gray-900">About Us</p>
 
@@ -145,7 +145,7 @@ const Footer = () => {
               &copy; 2024 Company Name
             </p>
 
-            <p className="text-sm text-gray-500">
+            <div className="text-sm text-gray-500 gap-1">
               <span className="block sm:inline">All rights reserved.</span>
               <Link
                 className="inline-block text-teal-600 underline transition hover:text-teal-600/75"
@@ -162,7 +162,7 @@ const Footer = () => {
               >
                 Privacy Policy
               </Link>
-            </p>
+            </div>
           </div>
         </div>
       </div>
