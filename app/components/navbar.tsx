@@ -4,6 +4,7 @@ import Container from "@/app/components/ui/container";
 import MainNav from "@/app/components/main-nav";
 import getCategories from "@/actions/get-categories";
 import NavbarActions from "@/app/components/navbar-actions";
+import { useState } from "react";
 
 export const revalidate = 0;
 
