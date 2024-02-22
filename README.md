@@ -1,8 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## About this project
 
-## Getting Started
+The Integrated Store-Front Dashboard revolutionizes retail management with a comprehensive system designed for seamless product presentation. Perform CRUD operations effortlessly, manage inventory, and assign products to categories for streamlined organization. Customize and update categories dynamically for an ever-evolving product catalog. Create eye-catching billboards, edit content, and schedule changes for effective promotions. The user-friendly interface ensures quick access to management functionalities with a responsive design for a seamless experience. Real-time updates and low-stock notifications keep businesses agile, complemented by robust security measures. Benefit from efficient product display, streamlined management, adaptability, and enhanced user experiences. Built with modern web technologies, relational database integration, RESTful APIs, and a scalable architecture, this dashboard defines the future of retail management.
 
-First, run the development server:
+## Cloning the repository
+
+```bash
+https://github.com/Addisu87/ecommerce-store.git
+```
+
+## Running Locally
+
+1 - Install dependencies using pnpm:
+
+```bash
+npm install
+```
+
+2- Copy .env.example to .env.local and update the variables.
+
+```bash
+cp .env.example .env.local
+```
+
+3-First, run the development server:
 
 ```bash
 npm run dev
@@ -10,27 +30,58 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Key Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+📁 New /app dir
+🛣️ Routing, Layouts, Nested Layouts, and Layout Groups
+🔄 Data Fetching, Caching, and Mutation
+⏳ Loading UI
+🚀 Route handlers
+📄 Metadata files
+🖥️ Server and Client Components
+🌐 API Routes and Middlewares
+🔐 Authentication using Clerk.js
+🛠️ ORM using Prisma
+🌍 Database on PlanetScale
+🖌️ UI Components built using Shadcn UI
+🔄 CRUD operations
+🛡️ Zustand as state management library
+🎨 Icon toolkit using lucide-react
+🔄 Subscriptions (checkout, webhooks) using Stripe
+🎨 Styled using Tailwind CSS
+📊 Able to see orders, sales, etc.
+📝 Written in TypeScript
 
-## Learn More
+<!-- AUTHORS -->
 
-To learn more about Next.js, take a look at the following resources:
+## 👥 Authors <a name="authors"></a>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+👤 **Addisu Haile**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- GitHub: [![GitHub Badge](https://img.shields.io/badge/-Addisu87-white?logo=GitHub&logoColor=181717&style=plastic)](https://github.com/Addisu87)
+- Twitter: [![Twitter Badge](https://img.shields.io/badge/-AddisuTedla-white?logo=Twitter&logoColor=1DA1F2&style=plastic)](https://twitter.com/AddisuTedla)
+- LinkedIn: [![LinkedIn Badge](https://img.shields.io/badge/-addisu_tedla-white?logo=LinkedIn&logoColor=1DA1F2&style=plastic)](https://linkedin.com/in/addisu-tedla/)
 
-## Deploy on Vercel
+<!-- CONTRIBUTING -->
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🤝 Contributing <a name="contributing"></a>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Addisu87/ecommerce-store.git/issues).
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project give me a star.
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank Antonio Erdeljac.
