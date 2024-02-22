@@ -34,6 +34,10 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Live Demo (if available)
+
+[Live Demo Link](https://ecommerce-store-addisu87.vercel.app)
+
 ## Key Features
 
 📁 New /app dir
